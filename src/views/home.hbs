@@ -1,0 +1,36 @@
+<div class="home">
+    {{>header}}
+    <div class="body-container">
+        {{!-- <div class="body-overlay-signedout" style="position: absolute;"></div> --}}
+        <div class="body-overlay-signedin" style="position: absolute;">        
+            
+            <form id="searchForm" method="get" action="/search" style=" width: 99%; padding: 0% 2%;">
+                <div class="speech">
+                    <button id="submit" type="submit" name="submit" value="">
+                        <img id="search" type="image/png" src="/images/search.png" />
+                    </button>
+                    <input type="text" name="searchBook" id="searchBar" value="" placeholder="Search . . . " />
+                    <img id="mike" onclick="voiceSearchStart()" src="/images/microphone-black.png" />
+                </div>
+            </form>
+            
+            <p class="txt-type-1">
+                <br> “ A reader lives a thousand lives before he dies . . .
+                <br> The man who never reads lives only one ” 
+                <br><span style="font-family: 'Times New Roman', Times, serif; font-style:normal; font-size:30px;">- George R.R. Martin</span>
+            <p>
+            <div id='block1' style="display: flex;width: 100%;padding: 2%;">
+                <p class="txt-type-2"> Dive into the vast world of books and 
+                    <br> Discover new adventures everyday.
+                </p>
+                <img class="book-shelf" style="height:auto;width: 900px;" alt="Image of books on a shelf" src="/images/block_1.jpg"/>
+            </div>
+            <div id="block2" style="display: flex;width: 100%;padding: 2%;">
+                <img style="height:auto; width: 800px;" alt="Kindle e-reader with a glass of iced tea" src="/images/block_2.png" />
+                <p class="txt-type-2"> Read at your leisure, on your favorite
+                    <br>device and from anywhere at any time.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

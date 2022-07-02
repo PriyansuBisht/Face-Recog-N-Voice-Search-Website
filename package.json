@@ -1,0 +1,22 @@
+{
+  "name": "faceauthandvoicesearch",
+  "version": "1.0.0",
+  "description": "A Website secure with face authintication and user friendly with voice search",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js -e js,hbs,css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Priyansu Bisht",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "face-api.js": "^0.22.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^6.3.4",
+    "nodemon": "^2.0.16"
+  }
+}

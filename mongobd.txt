@@ -1,0 +1,3 @@
+Data Direcotory : C:\Program Files\MongoDB\Server\5.0\data\
+
+Log Direcotory : C:\Program Files\MongoDB\Server\5.0\log\

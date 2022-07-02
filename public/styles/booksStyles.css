@@ -1,0 +1,77 @@
+.books-body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(225, 225, 225);
+}
+
+.books-body .books-view {
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 80px;
+    column-gap: 50px;
+}
+
+.books-body .books-view .book {
+    width: 50%;
+    height: 30vh;
+    display: flex;
+}
+.books-body .books-view .book .book-image {
+    margin-right: 15px;
+    height: 100%;
+    border: 4px solid white;
+    min-width: 130px;
+    max-width: 130px;
+    cursor: pointer;
+}
+
+.books-body .books-view .book .book-info {
+    padding: 0px 10px;
+}
+
+
+.books-body .books-view .book .book-info .book-name {
+    padding: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.books-body .books-view .book .book-info span {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: smaller;
+}
+
+.books-body .books-view .book .book-info .book-name span {
+    font-size: large;
+}
+.books-body .books-view .book .book-info .book-series {
+    padding: 5px;
+    font-size: smaller;
+    text-transform: capitalize;
+}
+
+.books-body .books-view .book .book-info .book-author {
+    padding: 5px;
+    font-size: smaller;
+    text-transform: capitalize;
+}
+
+.books-body .books-view .book .book-info .book-note {
+    padding: 5px;
+    height: 97px;
+    width: 415px;
+    font-style: italic;
+    font-size: smaller;
+    border: none;
+    background-color: rgb(225, 225, 225);
+    font-weight: bold;
+    resize: none;
+    outline: none;
+}

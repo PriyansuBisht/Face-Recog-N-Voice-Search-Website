@@ -1,0 +1,53 @@
+<div class="junction">
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="/signup" method="post" id="sign-up-form" enctype="multipart/form-data">
+                <h1 class="impH1">Create Account</h1><br><br>
+                <input type="text" placeholder="Enter Full Name" name="name" value="" required pattern="[a-zA-Z]+ [a-zA-Z]+"/>
+                <input type="text" placeholder="Enter Username" name="username" value="" pattern="[a-zA-Z0-9]+" required/>
+                <input type="email" placeholder="Enter Email ID" name="email" value="" required/>
+                <input type="number" placeholder="Enter Phone Number" name="phoneno" value="" maxlength="10" min="1000000000" max="9999999999" required/>
+                <input type="password" placeholder="Enter Password" name="password" value="" minlength="8" required/>
+                <input type="password" placeholder="Confirm Password" name="confirmpass" value="" required/>
+                <input type="file" name="images" accept="image/jpeg" required multiple/>
+                <button type="submit" value="signup" style="position: relative;top: 20px;">SIGN UP</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in-container">
+            <form action="authinticate" method="post" id="sign-in-form" enctype="multipart/form-data">
+                <h1 class="impH1">Sign in</h1><br><br>
+                <input type="text" placeholder="Enter Username" name="loginUsername" value=""/>
+                <input type="email" placeholder="Enter Email ID" name="loginEmail" value=""/>
+                <input type="password" placeholder="Enter Password" name="loginPassword" value="">
+                <a href="#" style="position: relative;top: 10px;">Forgot your password?</a>
+                <button type="submit" value="authinticate" style="position: relative;top: 30px;">SIGN IN</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <p class = "top" id="welcomeback">Welcome Back!!!</p><br><br><br>
+                    <button class="bottom ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <p class = "top" id="hello">Hello, New Friend!</p><br><br><br>
+                    <button class="bottom ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('container');
+
+    signUpButton.addEventListener('click', () => {
+        container.classList.add("right-panel-active");
+    });
+
+    signInButton.addEventListener('click', () => {
+        container.classList.remove("right-panel-active");
+    });
+</script>

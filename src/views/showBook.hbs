@@ -1,0 +1,55 @@
+<div class="showBook-div">
+    {{>header}}
+    <div class="book-body">
+        <div class="whole-body">
+            <div class="book-image">
+                <img src="{{Book.image}}" alt="{{Book.name}}">
+            </div>
+            <div class="book-info">
+                <p class="book-name">
+                    {{Book.name}}
+                </p>
+                <button type="button" class="read-button" onclick="">READ</button>
+                <p class="book-category">
+                    <span>Category : </span>
+                    {{Book.category}}
+                </p>
+                <p class="book-type">
+                    <span>Type : </span>
+                    {{Book.type}}
+                </p>
+                <p class="book-counter">
+                    <span>Counter : </span>
+                    {{Book.partNo}} / {{Book.totalparts}}
+                </p>
+                <p class="book-genre">
+                    <span>Genre : </span>
+                    {{Book.genre}}
+                </p>
+                <p class="book-pages">
+                    <span>Pages : </span>
+                    {{Book.pages}}
+                </p>
+                <p class="book-author">
+                    <span>Author : </span>
+                    {{Book.author}}
+                </p>
+                <p class="book-series">
+                    <span>Series : </span>
+                    {{Book.series}}
+                </p>
+                <p class="book-prequel">
+                    <span>Prequel : </span>
+                    {{Book.prequel}}
+                </p>
+                <p class="book-sequel">
+                    <span>Sequel : </span>
+                    {{Book.sequel}}
+                </p>
+                <textarea class="book-summary" readonly>
+                    {{Book.summary}}
+                </textarea>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+.header {
+    padding: 2vh 0;
+    background: linear-gradient(70deg, rgb(36, 36, 36) 30%, rgb(19, 19, 19) 30% 80%, rgb(36, 36, 36) 80% 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .2);
+    height: 15vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.header .navBar {
+    padding: 0 2vw;
+    height: 11vh;
+    width: 100%;
+    display: flex;
+    padding-left: 10px;
+}
+
+.header .logo-box {
+    float: left;
+}
+
+
+.header .logo-box a {
+    outline: none;
+    display: block;
+}
+
+
+.header .logo-box img {
+    display: block;
+    height: 10vh;
+    width: auto;
+}
+
+
+.header nav {
+    overflow: hidden;
+    width: 70%;
+}
+
+
+.header ul {
+    list-style: none;
+    float: left;
+}
+
+
+.header li {
+    display: inline-block;
+    margin-left: 2vw;
+    height: 10vh;
+    line-height: 10vh;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #c4baba;
+    text-transform: uppercase;
+}
+
+
+.header a {
+    text-decoration: none;
+    font-weight: bolder;
+    display: block;
+    position: relative;
+    color: #c4baba;
+    text-transform: uppercase;
+    cursor: crosshair;
+}
+
+
+.header a:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    background: #fafafa;
+    transition: width .5s linear;
+}
+
+
+.header a:hover:after {
+    width: 100%;
+}
+
+.start, .logout {
+    display: inline-block;
+}

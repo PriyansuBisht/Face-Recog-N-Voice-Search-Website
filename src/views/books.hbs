@@ -1,0 +1,24 @@
+<div class="books-body">
+    {{>header}}
+
+    <div class="books-view">
+        <div class="notFound" style="display: none;"> : :  No Result FOUND</div>
+        {{#each Books}}
+        <div class="book">
+            <img class="book-image" src="{{image}}" alt="{{name}}" onclick='getBook("{{name}}")'/>
+            <div class="book-info">
+                <p class="book-name" onclick='getBook("{{name}}")'><span>Name : </span>{{name}}</p>
+                <p class="book-series"><span>Series : </span>{{series}}</p>
+                <p class="book-author"><span>Author : </span>{{author}}</p>
+                <hr style="height: 3px; background: black; margin: 2px;">
+                <textarea class="book-note" readonly>{{note}}</textarea>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+<script>
+    if( {{Books.length}} <= 0) {
+        document.getElementsByClassName("notFound")[0].style.display = "block";
+    }
+</script>

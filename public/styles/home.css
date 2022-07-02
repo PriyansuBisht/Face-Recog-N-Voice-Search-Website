@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+.body-container, .body-overlay-signedout, .body-overlay-signedin {
+    height: auto;
+    width: 100%;
+    background-color: rgb(225, 225, 225);
+    box-sizing: border-box;
+}
+
+.body-overlay-signedin {
+    text-align: center;
+}
+
+.body-overlay-signedin .txt-type-1 {
+    margin-top: 10px; 
+    color:black; 
+    text-align: center; 
+    font-size: 25px; 
+    font-style: italic; 
+    font-weight: bold;
+}
+
+.body-overlay-signedin .txt-type-2 {
+    color: black;
+    font-style: italic;
+    margin-right: 2%;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 10%;
+}
+
+
+/* Speech Search */
+.speech {
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+.speech input {
+    padding: 1%;
+    width: 60%;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.speech img {
+    margin-left: 2px;
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+}
+
+#searchForm #search {
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#searchForm #submit {
+    margin-right: 7px;
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}

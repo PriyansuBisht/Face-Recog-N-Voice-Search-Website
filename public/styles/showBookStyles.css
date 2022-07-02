@@ -1,0 +1,127 @@
+.showBook-div .book-body {
+    width: 100% !important;
+    max-width: 100 !important;
+    height: 100% !important;
+    background-color: rgb(225, 225, 225);
+}
+
+.showBook-div .book-body .whole-body {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 2%;
+    display: flex;
+}
+.showBook-div .book-body .whole-body .book-image {
+    width: auto;
+    height: 75vh;
+    border: 10px solid white;
+}
+.showBook-div .book-body .whole-body .book-image img {
+    width: auto;
+    height: 100%;
+}
+
+.showBook-div .book-body .whole-body .book-info {
+    display: grid;
+    width: 100%;
+    border: none;
+    height: 75vh;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-rows: repeat(15, minmax(0, 1fr));
+    padding: 0% 1%;
+    row-gap: 2%;
+}
+
+.showBook-div .book-body .whole-body .book-info .book-name {
+    grid-column: 1 / 6;
+    grid-row: 1 / 3;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: rgb(15, 117, 189);
+}
+
+.showBook-div .book-body .whole-body .book-info .read-button {
+    width: 100px;
+    height: 60%;
+    justify-self: center;
+    vertical-align: middle;
+    grid-column: 6 / 7;
+    grid-row: 1 / 3;
+}
+
+.showBook-div .book-body .whole-body .book-info .book-category {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    
+}
+
+.showBook-div .book-body .whole-body .book-info .book-type {
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+    
+}
+
+.showBook-div .book-body .whole-body .book-info .book-counter {
+    grid-column: 5 / 7;
+    grid-row: 3 / 4;
+    
+}
+
+.showBook-div .book-body .whole-body .book-info .book-genre {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    
+}
+
+.showBook-div .book-body .whole-body .book-info .book-pages {
+    grid-column: 4 / 7;
+    grid-row: 4 / 5;
+    
+}
+
+.showBook-div .book-body .whole-body .book-info .book-author {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+    text-transform: capitalize;
+}
+
+.showBook-div .book-body .whole-body .book-info .book-series {
+    grid-column: 4 / 7;
+    grid-row: 5 / 6;
+    text-transform: capitalize;
+}
+
+.showBook-div .book-body .whole-body .book-info .book-prequel {
+    grid-column: 1 / 4;
+    grid-row: 6 / 7;
+    
+}
+
+.showBook-div .book-body .whole-body .book-info .book-sequel {
+    grid-column: 4 / 7;
+    grid-row: 6 / 7;
+    
+}
+
+.showBook-div .book-body .whole-body .book-info .book-summary {
+    grid-column: 1 / 7;
+    grid-row: 7 / 16;
+    outline: none;
+    border: none;
+    margin-top: 2%;
+    padding-top: 1.5%;
+    background-color: rgb(225, 225, 225);
+    border-top: 3px solid rgb(15, 117, 189);
+    font-style: italic;
+    resize: none;
+}
+
+.showBook-div .book-body .whole-body .book-info span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+

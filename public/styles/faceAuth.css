@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+#faceAuthPage {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(237, 237, 237);
+    background-image: url('/images/webcam.png');
+    background-repeat: no-repeat;
+}
+
+.videoDiv {
+    border-radius: 100%;
+    background-color: white;
+    border: none;
+    position: absolute;
+    overflow: hidden;
+    top: 3.7%;
+    left: 30.7%;
+    width: 500px;
+    height: 500px;
+    box-sizing: content-box;
+    border: 24px solid rgb(130, 130, 130);
+    display: none;
+}
+
+#videoInput, canvas {
+    position: absolute;
+    top: -3.1px;
+    left: -83px;
+}
+canvas {
+    background-color: transparent;
+    opacity: 1;
+}
+
+#hi {
+    position: absolute;
+    top: 2vh;
+    left: 6vw;
+    color: rgb(41, 41, 41);
+    font-size: 9vw;
+    text-transform: uppercase;
+    display: inline;
+}
+
+#user {
+    position: absolute;
+    top: 8vh;
+    left: 68vw;
+    font-size: 3vw;
+    text-transform: uppercase;
+    display: inline;
+    color: rgb(82, 82, 82);
+    padding-bottom: 4px;
+    border-bottom: 4px solid rgb(83, 83, 83);
+}
+
+#auth {
+    padding: 13px;
+    border: none;
+    color: white;
+    background-color: rgb(110, 110, 110);
+    border-radius: 50px;
+    position: absolute;
+    bottom: 3vh;
+    right: 44vw;
+    font-size: 1vw;
+    cursor: crosshair;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#auth:hover {
+    border: 3px solid rgb(61, 61, 61);
+    color: rgb(61, 61, 61);
+    background-color: white;
+}

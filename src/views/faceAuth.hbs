@@ -1,0 +1,19 @@
+<div id="faceAuthPage">
+    <h1 id="hi" style="font-family: 'Orbitron', sans-serif;">Hii </h1>
+    <h1 id="user" style="font-family: 'Orbitron', sans-serif;"></h1>
+    <p id="imageno" style="display: none;"></p>
+    <br>
+    <div class="videoDiv">
+        <video id="videoInput" width="672px" height="504px" muted autoplay>
+    </div>
+    <button type="button" id="auth">Authinticte</button>
+    {{!-- <a href="/isAuthenticated" id="sucess" style="display:none;"></a>
+    <a href="/junction" id="failure" style="display:none;"></a> --}}
+</div>
+
+{{!-- <script defer src="/script/face-api.min.js"></script>
+<script defer src="/script/script.js"></script> --}}
+<script>
+    document.getElementById('imageno'),innerHeight = `{{totaluploadedimages}}`;
+    document.getElementById('user').innerHTML = `{{username}}`;
+</script>
